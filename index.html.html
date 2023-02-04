@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>第一個數:</p>
+        <input id="a" type="text">
+        <p>第二個數:</p>
+        <input id="b" type="text"><br>
+        <button onclick="sum()">+</button>
+        <button onclick="minest()">-</button>
+        <button onclick="cross()">*</button>
+        <button onclick="donkey()">/</button><br>
+        <output id="c"></output>
+        <script>
+            function sum(){
+                var a = parseInt(document.getElementById('a').value);
+                var b = parseInt(document.getElementById('b').value);
+                document.getElementById('c').value = a+b
+            }
+            function minest(){
+                var a = parseInt(document.getElementById('a').value);
+                var b = parseInt(document.getElementById('b').value);
+                document.getElementById('c').value = a-b
+            }
+            function cross(){
+                var a = parseInt(document.getElementById('a').value);
+                var b = parseInt(document.getElementById('b').value);
+                document.getElementById('c').value = a*b
+            }
+            function donkey(){
+                var a = parseInt(document.getElementById('a').value);
+                var b = parseInt(document.getElementById('b').value);
+                document.getElementById('c').value = a/b
+            }
+        </script>
+    </body>
+</html>
